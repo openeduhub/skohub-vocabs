@@ -1,28 +1,23 @@
 {
-  "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/380",
+  "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/3801",
   "type": "Concept",
-  "followers": "https://test.skohub.io/followers?subject=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F380",
-  "inbox": "https://test.skohub.io/inbox?target=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F380",
+  "followers": "https://test.skohub.io/followers?subject=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F3801",
+  "inbox": "https://test.skohub.io/inbox?target=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F3801",
   "prefLabel": {
-    "en": "Mathematics",
-    "de": "Mathematik"
+    "de": "Zahlen, Algebra"
   },
-  "narrower": [
-    {
-      "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/3801",
-      "prefLabel": {
-        "de": "Zahlen, Algebra"
-      }
+  "broader": {
+    "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/380",
+    "prefLabel": {
+      "en": "Mathematics",
+      "de": "Mathematik"
     }
-  ],
+  },
   "inScheme": {
     "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/",
     "title": {
       "en": "Discipline"
     }
-  },
-  "topConceptOf": {
-    "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/"
   },
   "@context": {
     "id": "@id",

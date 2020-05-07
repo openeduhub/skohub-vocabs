@@ -1,28 +1,19 @@
 {
-  "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/380",
+  "id": "https://w3id.org/openeduhub/vocabs/sourceContentType/001",
   "type": "Concept",
-  "followers": "https://test.skohub.io/followers?subject=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F380",
-  "inbox": "https://test.skohub.io/inbox?target=%2Fskohub-vocabsraw.githubusercontent.com%2Fsroertgen%2Foer-metadata-hub-vocab%2Fmaster%2Fdiscipline%2F380",
+  "followers": "https://test.skohub.io/followers?subject=%2Fskohub-vocabsw3id.org%2Fopeneduhub%2Fvocabs%2FsourceContentType%2F001",
+  "inbox": "https://test.skohub.io/inbox?target=%2Fskohub-vocabsw3id.org%2Fopeneduhub%2Fvocabs%2FsourceContentType%2F001",
   "prefLabel": {
-    "en": "Mathematics",
-    "de": "Mathematik"
+    "de": "Bilder-Datenbank"
   },
-  "narrower": [
-    {
-      "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/3801",
-      "prefLabel": {
-        "de": "Zahlen, Algebra"
-      }
-    }
-  ],
   "inScheme": {
-    "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/",
+    "id": "https://w3id.org/openeduhub/vocabs/sourceContentType/",
     "title": {
-      "en": "Discipline"
+      "en": "Source Content Type"
     }
   },
   "topConceptOf": {
-    "id": "https://raw.githubusercontent.com/sroertgen/oer-metadata-hub-vocab/master/discipline/"
+    "id": "https://w3id.org/openeduhub/vocabs/sourceContentType/"
   },
   "@context": {
     "id": "@id",
