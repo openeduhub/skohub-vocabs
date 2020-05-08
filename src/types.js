@@ -9,7 +9,7 @@ module.exports = languages => `
   type Concept implements Node {
     type: String,
     prefLabel: LanguageMap,
-    altLabel: LanguageMap,
+    altLabel: LanguageMapArray,
     definition: LanguageMap,
     scopeNote: LanguageMap,
     note: LanguageMap,
@@ -26,5 +26,8 @@ module.exports = languages => `
 
   type LanguageMap {
     ${[...languages].map(l => `${l}: String`).join(', ')}
+  }
+  type LanguageMapArray {
+    ${[...languages].map(l => `${l}: [String]`).join(', ')}
   }
 `
