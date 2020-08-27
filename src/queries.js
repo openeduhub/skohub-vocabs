@@ -108,6 +108,15 @@ module.exports.allConceptScheme = languages => `
                   ...ConceptFields
                   narrower {
                     ...ConceptFields
+                    narrower {
+                      ...ConceptFields
+                      narrower {
+                        ...ConceptFields
+                        narrower {
+                          ...ConceptFields
+                        }
+                      }
+                    }
                   }
                 }
               }
