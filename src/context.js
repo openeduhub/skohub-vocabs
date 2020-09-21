@@ -38,16 +38,16 @@ const jsonld = {
       "@container": "@language"
     },
     "altLabel": {
-      "@container": ["@language", "@set"],
+      "@container": ["@language", "@set"]
     },
     "definition": {
       "@container": "@language"
     },
     "scopeNote": {
-      "@container": "@language"
+      "@container": ["@language", "@set"]
     },
     "note": {
-      "@container": "@language"
+      "@container": ["@language", "@set"]
     },
     "notation": {
       "@container": "@set"
