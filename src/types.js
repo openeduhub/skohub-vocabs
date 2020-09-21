@@ -10,6 +10,7 @@ module.exports = languages => `
     type: String,
     prefLabel: LanguageMap,
     altLabel: LanguageMapArray,
+    hiddenLabel: LanguageMapArray,
     definition: LanguageMap,
     scopeNote: LanguageMap,
     note: LanguageMap,

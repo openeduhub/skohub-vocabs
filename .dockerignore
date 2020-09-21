@@ -1,0 +1,10 @@
+.cache
+.git
+.github
+node_modules
+logs
+test
+.vscode
+.github
+public
+data
