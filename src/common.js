@@ -18,7 +18,7 @@ const t = localized => {
     // convert array to string
     // spread the resulting array and reassign values to an empty object
     let stringifiedLocalized = Object.assign({}, ...Object.entries(localized).map((e) => ({
-      [e[0]]: e[1] === null ? "" : e[1].toString()
+      [e[0]]: e[1] === null ? "" : e[1].join("; ")
     })))
     return convertLocalized(stringifiedLocalized)
   }
