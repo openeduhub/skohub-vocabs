@@ -4,24 +4,32 @@ const fetch = require("node-fetch")
 
 
 const t = localized => {
-  const convertLocalized = localized => (
+  const localizedToString = localized => (
     (    
     Object.entries(localized)
           .filter(([, value]) => !!value)
           .shift() || []
       ).pop() || ""
     )
-  if (Object.values(localized).some((e) => Array.isArray(e)) === false) {
-    return convertLocalized(localized)
+  if (typeof localized === 'object' && localized !== null) {
+    if (Object.values(localized).some((e) => Array.isArray(e)) === false) {
+      return localizedToString(localized)
+    } else {
+      // localized has Array values at language tag
+      // convert array to string
+      // spread the resulting array and reassign values to an empty object
+      let joinedLocalized = Object.assign({}, ...Object.entries(localized).map((e) => ({
+        [e[0]]: e[1] === null ? "" : e[1].join("; ")
+      })))
+      return localizedToString(joinedLocalized)
+    }
   } else {
-    // localized has Array values at language tag
-    // convert array to string
-    // spread the resulting array and reassign values to an empty object
-    let stringifiedLocalized = Object.assign({}, ...Object.entries(localized).map((e) => ({
-      [e[0]]: e[1] === null ? "" : e[1].join("; ")
-    })))
-    return convertLocalized(stringifiedLocalized)
+    // if localized is no object convert localized will throw an error
+    // therefore return empty string
+    console.log(localized)
+    return ""
   }
+  
 }
 
 const getFilePath = (url, extension) => {
