@@ -39,6 +39,9 @@ const jsonld = {
     "prefLabel": {
       "@container": "@language"
     },
+    "hiddenLabel": {
+      "@container": ["@language", "@set"],
+      },
     "altLabel": {
       "@container": ["@language", "@set"],
     },

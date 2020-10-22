@@ -21,6 +21,9 @@ module.exports.allConcept = (inScheme, languages) => `
           altLabel {
             ${[...languages].join(' ')}
           }
+          hiddenLabel {
+            ${[...languages].join(' ')}
+          }
           definition {
             ${[...languages].join(' ')}
           }
@@ -36,10 +39,16 @@ module.exports.allConcept = (inScheme, languages) => `
             prefLabel {
               ${[...languages].join(' ')}
             }
+            altLabel {
+              ${[...languages].join(' ')}
+            }
           }
           narrowerTransitive {
             id
             prefLabel {
+              ${[...languages].join(' ')}
+            }
+            altLabel {
               ${[...languages].join(' ')}
             }
           }
@@ -48,10 +57,16 @@ module.exports.allConcept = (inScheme, languages) => `
             prefLabel {
               ${[...languages].join(' ')}
             }
+            altLabel {
+              ${[...languages].join(' ')}
+            }
           }
           broaderTransitive {
             id
             prefLabel {
+              ${[...languages].join(' ')}
+            }
+            altLabel {
               ${[...languages].join(' ')}
             }
           }
@@ -93,6 +108,15 @@ module.exports.allConceptScheme = languages => `
                   ...ConceptFields
                   narrower {
                     ...ConceptFields
+                    narrower {
+                      ...ConceptFields
+                      narrower {
+                        ...ConceptFields
+                        narrower {
+                          ...ConceptFields
+                        }
+                      }
+                    }
                   }
                 }
               }
