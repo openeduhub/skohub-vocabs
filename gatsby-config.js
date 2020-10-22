@@ -1,10 +1,14 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `SkoHub-Vocabs`,
     description: `Static site generator for Simple Knowledge Management Systems (SKOS)`,
     author: `@gatsbyjs`,
   },
-  pathPrefix: ``,
+  pathPrefix: `${process.env.PATH_PREFIX || ''}`,
   plugins: [
     `gatsby-plugin-emotion`,
     {

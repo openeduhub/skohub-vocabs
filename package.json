@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@babel/compat-data": "7.9.0",
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
-    "@babel/compat-data": "7.9.0",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "flexsearch": "^0.6.32",
