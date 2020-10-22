@@ -16,64 +16,67 @@ module.exports.allConcept = (inScheme, languages) => `
           followers
           inbox
           prefLabel {
-            ${[...languages].join(' ')}
+            ${[...languages].join(" ")}
           }
           altLabel {
-            ${[...languages].join(' ')}
+            ${[...languages].join(" ")}
           }
           hiddenLabel {
             ${[...languages].join(' ')}
           }
           definition {
-            ${[...languages].join(' ')}
+            ${[...languages].join(" ")}
           }
           scopeNote {
-            ${[...languages].join(' ')}
+            ${[...languages].join(" ")}
           }
           note {
-            ${[...languages].join(' ')}
+            ${[...languages].join(" ")}
           }
           notation
           narrower {
             id
             prefLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
             altLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
+            note {
+            ${[...languages].join(" ")}
+          }
           }
           narrowerTransitive {
             id
             prefLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
             altLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
           }
           broader {
             id
             prefLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
             altLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
           }
           broaderTransitive {
             id
             prefLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
             altLabel {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
           }
           inScheme {
             id
             title {
-              ${[...languages].join(' ')}
+              ${[...languages].join(" ")}
             }
           }
           topConceptOf {
@@ -133,6 +136,9 @@ module.exports.allConceptScheme = languages => `
       ${[...languages].join(' ')}
     }
     altLabel {
+      ${[...languages].join(' ')}
+    }
+    note {
       ${[...languages].join(' ')}
     }
   }
