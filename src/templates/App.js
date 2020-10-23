@@ -22,7 +22,8 @@ const App = ({pageContext, children}) => {
 
   // Fetch and load the serialized index
   useEffect(() => {
-    fetch(pageContext.baseURL + (process.env.BASEURL || '') + getFilePath(conceptSchemeId, 'index'))
+    const path = '/' + `${process.env.PATH_PREFIX ? process.env.PATH_PREFIX + '/' : pageContext.baseURL}` + getFilePath(conceptSchemeId, 'index')
+    fetch(path)
       .then(response => response.json())
       .then(serialized => {
         const idx = FlexSearch.create()

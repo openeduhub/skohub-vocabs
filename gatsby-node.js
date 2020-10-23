@@ -179,7 +179,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 }
 
 const createData = ({path, data}) =>
-  fs.outputFile(`public${path}`, data, err => err && console.error(err))
+  fs.outputFile(`public/${path}`, data, err => err && console.error(err))
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
