@@ -7,6 +7,8 @@ const jsonld = require('jsonld')
 const n3 = require('n3')
 const path = require('path')
 const fs = require('fs-extra')
+const gracefulFs = require('graceful-fs');
+gracefulFs.gracefulify(fs);
 const flexsearch = require('flexsearch')
 const omitEmpty = require('omit-empty')
 const urlTemplate = require('url-template')

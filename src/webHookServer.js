@@ -4,6 +4,8 @@ const Router = require('koa-router')
 const bodyParser = require('koa-bodyparser')
 const uuidv4 = require('uuid/v4')
 const fs = require('fs-extra')
+const gracefulFs = require('graceful-fs');
+gracefulFs.gracefulify(fs);
 const exec = require('child_process').exec
 const fetch = require("node-fetch")
 
