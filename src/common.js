@@ -33,7 +33,7 @@ const t = localized => {
 }
 
 const getFilePath = (url, extension) => {
-  let path = url.replace(/^https?:\/\//, "").split('#').shift()
+  let path = url.replace(/^https?:\//, "").split('#').shift()
   path.endsWith('/') && (path += 'index')
   return extension ? `${path}.${extension}` : path
 }
