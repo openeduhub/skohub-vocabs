@@ -16,4 +16,6 @@ COPY . .
 
 COPY .env.example .env
 
+RUN ulimit -n 10240
+
 CMD ["npm", "run", "build"]
